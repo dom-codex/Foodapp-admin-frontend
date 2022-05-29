@@ -1,11 +1,11 @@
 import React from 'react';
+import Login from './pages/login.js';
 import './style.css';
 
 export default function App() {
   return (
     <div className="">
-      <h1>Hello StackBlitz!</h1>
-      <p>Start editing to see some magic happen :)</p>
+      <Login />
     </div>
   );
 }
