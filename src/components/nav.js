@@ -21,8 +21,14 @@ const Nav = () => {
           <div className="mr-4">
             <i className={'material-icons '}>person</i>
           </div>
-          <div className="">
+          <div className="relative group">
             <i className={'material-icons '}>more_vert</i>
+            <div className="invisible group-hover:visible   absolute right-0 -bottom-[42px] px-3  h-12 bg-white rounded-sm shadow-lg flex items-center text-sm">
+              <button className="flex justify-center items-center bg-white">
+                <i className="material-icons">power_settings_new</i>
+                Logout
+              </button>
+            </div>
           </div>
         </div>
       </div>
