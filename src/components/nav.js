@@ -9,11 +9,11 @@ const Nav = () => {
           <img src={foodIcon} className={'h-8 w-8 mr-2'} />
           <h2>Foodie</h2>
         </div>
-        <div className="invisible">
+        <div className="block  md:hidden">
           <i className="material-icons">dehaze</i>
         </div>
         {/**options container for large screen */}
-        <div className="flex ">
+        <div className="hidden md:flex ">
           <div className="relative mr-4">
             <i className="material-icons">notifications</i>
             <div className="absolute top-0 right-0  h-2 w-2 bg-red-500 rounded-lg"></div>
