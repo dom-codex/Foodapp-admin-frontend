@@ -2,7 +2,7 @@ import React from 'react';
 const Sidebar = () => {
   const data = [{ title: 'Dashboard', path: '#', icon: 'dashboard' }, {title:"Notification ", path:"",icon:"notifications"}];
   return (
-    <aside className="fixed top-0 left-0 w-screen h-screen bg-black/5 backdrop-blur-sm">
+    <aside className="fixed top-0 left-0 w-screen h-screen bg-black/5 backdrop-blur-sm hidden">
       <div className="bg-white w-1/2 h-full overflow-hidden">
         {data.map((data, i) => {
           return <SideItem data={data} />;
