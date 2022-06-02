@@ -1,11 +1,12 @@
 import React from "react"
 const Notification =()=>{
-return <div>
+return <div className="w-[95%] mx-auto  mt-4 rounded-md bg-black/5 backdrop-blur-sm">
   <div className="flex justify-between items-center  px-2 h-[48px]">
     <p className="font-bold relative  
     after:absolute after:top-[10px] after:-right-[10px] after:h-[6px] after:w-[6px] after:bg-black after:content-[''] after:rounded-md">Notifications</p>
     <button className="text-sm text-gray-700">mark all as read</button>
   </div>
+  <div className="p-2">
   <div className="flex items-center">
     <i className ={"material-icons icon "}>notifications</i>
     <div>
@@ -17,6 +18,8 @@ return <div>
       <small className="text-gray-700">Mon, jan 29 2023,2:30am </small>
     </div>
   </div>
+  </div>
+  <div className="text-center bg-black/7 backdrop-blur-sm  mt-2 p-2"><a href="#" className="hover:underline">view more</a></div>
 </div>
 }
 export default Notification
