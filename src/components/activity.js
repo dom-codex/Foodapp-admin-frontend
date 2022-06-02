@@ -1,7 +1,7 @@
 import React from "react"
 const Activity =()=>{
 return <div>
-  <div>
+  <div className={"h-[32px] border-b-sm"}>
     <p>Activity</p>
   </div>
   <div>
@@ -11,10 +11,10 @@ return <div>
 }
 export default Activity;
 const ActivityItem=()=>{
-  return <div>
-    <div> <i className="material-icons">keys</i></div>
+  return <div className="flex items-center">
+    <div className="m-0"> <i className="material-icons icon-s">key</i></div>
     <div>
-      <h2>Added a meal</h2>
+      <h2 className={"font-bold"}>Added a meal</h2>
       <div>
         <p>action by</p>
         <p>Dominicwest7@gmail.com</p>
