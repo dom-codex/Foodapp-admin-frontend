@@ -1,7 +1,7 @@
 import React from 'react';
 const Notification = () => {
   return (
-    <div className="w-[95%] mx-auto  mt-4 rounded-md bg-black/5 backdrop-blur-sm">
+    <div className="w-[95%] mx-auto  mt-4 rounded-md bg-white/40 backdrop-blur-sm shadow-lg">
       <div className="flex justify-between items-center  px-2 h-[48px]">
         <p
           className="font-bold relative  
@@ -26,7 +26,7 @@ const Notification = () => {
           </div>
         </div>
       </div>
-      <div className="text-center bg-black/7 backdrop-blur-sm  mt-2 p-3">
+      <div className="text-center bg-black/10 backdrop-blur-sm  mt-2 p-3">
         <a href="#" className="hover:underline">
           view more
         </a>
