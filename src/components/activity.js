@@ -1,6 +1,6 @@
 import React from "react"
 const Activity =()=>{
-return <div className="mx-auto mt-[36px] w-[95%] b-white/40 backdrop-blur-sm shadow-lg pb-8">
+return <div className="mx-auto mt-[36px] w-[95%] b-white/40 backdrop-blur-sm shadow-lg pb-8 border-[1px] border-[1px] border-slate-200 ">
   <div className={"h-[52px] border-b-[1px] border-b-slate-200 px-[24px] mb-[16px] flex items-center justify-between"}>
     <p className="font-bold">Activity</p>
     <button>view all</button>
@@ -12,9 +12,9 @@ return <div className="mx-auto mt-[36px] w-[95%] b-white/40 backdrop-blur-sm sha
 }
 export default Activity;
 const ActivityItem=()=>{
-  return <div className="flex items-center">
+  return <div className="flex items-center mx-4">
     <div className="m-0"> <i className="material-icons icon-s text-red-300">key</i></div>
-    <div className="ml-[16px]">
+    <div className="ml-[12px]">
       <h2 className={"font-bold"}>Added a meal</h2>
       <div className="flex mr-[8px]">
         <p>action by: </p>

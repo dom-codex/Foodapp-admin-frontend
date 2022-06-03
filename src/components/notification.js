@@ -1,7 +1,7 @@
 import React from 'react';
 const Notification = () => {
   return (
-    <div className="w-[95%] mx-auto  mt-4 rounded-md bg-white/40 backdrop-blur-sm shadow-lg">
+    <div className="w-[95%] mx-auto  mt-4 rounded-md bg-white/40 backdrop-blur-sm shadow-lg border-[1px] border-slate-200">
       <div className="flex justify-between items-center  px-2 h-[48px]">
         <p
           className="font-bold relative  
@@ -13,7 +13,7 @@ const Notification = () => {
       </div>
       <div className="p-2">
         <div className="flex items-center">
-          <i className={'material-icons icon '}>notifications</i>
+          <i className={'material-icons icon text-green-400'}>notifications</i>
           <div>
             <h3 className="font-bold">New complaint Email</h3>
             <div className="text-gray-500">
