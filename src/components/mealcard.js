@@ -1,9 +1,9 @@
 import React from "react"
-import mealstatic from "../asset/jollofrice.jpeg"
+
 const MealCard=()=>{
 return <div>
   <div>
-<img src={mealstatic}/>
+<img src={"../asset/jollofrice.jpg"}/>
 <button><i className="material-icons">edit</i></button>
   </div>
   <div>
