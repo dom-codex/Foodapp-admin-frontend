@@ -35,7 +35,7 @@ const Dashboard = () => {
           </h2>
           <MealCard />
         </div>
-        <div>
+        <div className="mb-10">
           <h2
             className="relative  font-bold mb-6 text-[1.6rem] text-slate-700 before:content-[''] 
           before:absolute before:w-[10%] before:h-[2px] before:bg-black before:bottom-0 before:rounded-md "
@@ -44,8 +44,23 @@ const Dashboard = () => {
           </h2>
           <Statscard />
         </div>
-        <Notification />
-        <Activity />
+        <div className="mb-10">
+          <h2
+            className="relative  font-bold mb-6 text-[1.6rem] text-slate-700 before:content-[''] 
+          before:absolute before:w-[15%] before:h-[2px] before:bg-black before:bottom-0 before:rounded-md "
+          >
+            Notification {'&'} Alert
+          </h2>
+          <div className="block">
+            <Notification />
+            <Activity />
+          </div>
+        </div>
+        <div className={"mb-6 flex row-reverse"}>
+          <button>
+            <span>Logout</span> <i className="material-icons">log_out</i>
+          </button>
+        </div>
       </div>
     </section>
   );
