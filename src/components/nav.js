@@ -2,7 +2,7 @@ import React from 'react';
 import foodIcon from '../asset/foodcovered.svg';
 const Nav = () => {
   return (
-    <nav className={'w-full block fixed  top-0 left-0 shadow-lg backdrop-blur-sm bg-white/5  '}>
+    <nav className={'w-full block fixed  top-0 left-0 shadow-lg backdrop-blur-sm bg-white/5 z-50 '}>
       {/**container for mobile  */}
       <div className="flex justify-between items-center p-4 pr-1  w-full ">
         <div className="flex items-center">
