@@ -3,7 +3,7 @@ import Nav from './components/nav.js';
 import Sidebar from './components/sidebar.js';
 const LayoutFrame = ({ children }) => {
   return (
-    <section className={'mainbg block min-h-screen w-screen'}>
+    <section className={'mainbg block min-h-screen'}>
       <Nav />
       <div className="pt-[86px]">
         <div>
