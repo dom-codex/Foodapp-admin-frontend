@@ -1,7 +1,7 @@
 import React from 'react';
 const Statscard = () => {
   return (
-    <div className="w-[95%] mx-auto border-2 border-purple-700 overflow-hidden rounded-md shadow-lg">
+    <div className="border-2 border-purple-700 overflow-hidden rounded-md shadow-lg">
       <div className="flex  justify-between items-center h-[100px] bg-purple-500/60 backdrop-blur-sm px-4">
         <div>
           <p className="text-2xl font-bold">200</p>

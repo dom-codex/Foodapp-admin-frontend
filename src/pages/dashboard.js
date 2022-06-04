@@ -6,21 +6,26 @@ import MealCard from "../components/mealcard.js"
 const Dashboard = () => {
   return (
     <section>
-      <div>
-        <div className={"flex w-[95%] mx-auto mb-8"}>
+      <div className="w-[95%] mx-auto">
+        <div className={"flex mx-auto mb-8"}>
           <div>
-            <h2 className="font-bold mb-0">Welcome Dominic!!!</h2>
-            <small className="text-slate-900 mt-0">
+            <h2 className="font-bold mb-0 text-[1.5rem]">Welcome Dominic!!!</h2>
+            <small className="text-slate-500 mt-0 text-[0.9rem] font-bold ">
               <span>access level:</span>
               <span>Owner</span>
             </small>
           </div>
         </div>
         {/**stats section  */}
-        <div>
+        <div className="mb-10">
+          <h2 className="relative  font-bold mb-3 text-[1.6rem] text-slate-700 before:content-[''] 
+          before:absolute before:w-[10%] before:h-[2px] before:bg-black before:bottom-0 before:rounded-md ">Statistics </h2>
         <Statscard />
         </div>
+        <div>
+          <h2 className="">Popular </h2>
         <MealCard/>
+        </div>
         <Notification />
         <Activity/>
       </div>
