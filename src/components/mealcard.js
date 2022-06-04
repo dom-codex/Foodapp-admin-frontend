@@ -23,6 +23,7 @@ const MealCard = () => {
           <p className="text-slate-500 font-bold ">rating: </p>
           <p className="">4.3</p>
         </div>
+        <p className="font-bold mt-3">N100,000</p>
       </div>
     </div>
   );
