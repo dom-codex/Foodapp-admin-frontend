@@ -5,6 +5,8 @@
 * {
   font-family: 'Open Sans';
   background-color: transparent;
+  padding:0px;
+  margin:0px
 }
 .icon{
   font-size:64px!important 
