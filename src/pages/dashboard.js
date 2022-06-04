@@ -56,9 +56,13 @@ const Dashboard = () => {
             <Activity />
           </div>
         </div>
-        <div className={"mb-6 flex row-reverse"}>
-          <button>
-            <span>Logout</span> <i className="material-icons">log_out</i>
+        <div className={'mb-6 flex flex-row-reverse'}>
+          <button
+            className={
+              'flex items-center p-2 bg-red-200 border-2 rounded-md text-red-500 border-red-600 font-bold hover:bg-red-500 hover:text-white'
+            }
+          >
+            <span>Logout</span> <i className="material-icons">power</i>
           </button>
         </div>
       </div>

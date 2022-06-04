@@ -8,7 +8,7 @@ const Statscard = () => {
           <small>Customers</small>
         </div>
         <div className="">
-          <i className="material-icons icon ">person</i>
+          <i className="material-icons icon ">people</i>
         </div>
       </div>
       <div className="bg-white/1 backdrop-blur-sm h-[62px] flex justify-between items-center px-4">
