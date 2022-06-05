@@ -17,7 +17,9 @@
           'zin':"zin 0.1s linear forwards",
           'zout':"zout 0.1s linear 1s forwards",
           'oin':"oin 0.7s linear 0.1s forwards",
-          'out':"out 0.7s linear 0.3s forwards"
+          'out':"out 0.7s linear 0.3s forwards",
+          "slideIn":"slideIn 0.7s linear 0.3s forwards",
+          "slideOut":"slideOut 0.7s linear forwards"
 
         },
         keyframes:{
@@ -36,6 +38,20 @@
           "zout":{
             "0%":{zIndex:51},
             "100%":{zIndex:-1}
+          },
+          "slideIn":{
+            '0%':{transform:"translateX(-100%)"},
+            '100%':{
+              transform:"translateX(0%)"
+            }
+          },
+          "slideOut":{
+            '0%':{
+              transform:"translateX(0%)"
+            },
+            "100%":{
+              transform:'translateX(-100%)'
+            }
           }
         }
 
