@@ -14,14 +14,31 @@
     theme:{
       extend:{
         animation:{
-          'oin':"oin 1s linear forwards"
+          'zin':"zin 0.1s linear forwards",
+          'zout':"zout 0.1s linear 1s forwards",
+          'oin':"oin 0.7s linear 0.1s forwards",
+          'out':"out 0.7s linear 0.3s forwards"
+
         },
         keyframes:{
           "oin":{
+            '0%':{opacity:0},
+            '100%':{opacity:1}
+          },
+          "out":{
             '0%':{opacity:1},
             '100%':{opacity:0}
+          },
+          "zin":{
+            "0%":{zIndex:-1},
+            "100%":{zIndex:51}
+          },
+          "zout":{
+            "0%":{zIndex:51},
+            "100%":{zIndex:-1}
           }
         }
+
       }
     }
   };
