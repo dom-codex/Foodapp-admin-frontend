@@ -1,8 +1,9 @@
 import React from 'react';
-const Sidebar = () => {
+const Sidebar = ({canOpen}) => {
+  
   const data = [{ title: 'Dashboard', path: '#', icon: 'dashboard' }, {title:"Notification ", path:"",icon:"notifications"}];
   return (
-    <aside className="fixed top-0 left-0 w-screen h-screen bg-black/5 backdrop-blur-sm hidden">
+    <aside className={`fixed top-[80px] left-0 w-screen h-screen bg-black/5 backdrop-blur-sm z-[51] transition ease-in-out  duration-[2000ms] delay-100 ${canOpen?"opacity-100 ":"opacity-0 "}`}>
       <div className="bg-white w-1/2 h-full overflow-hidden">
         {data.map((data, i) => {
           return <SideItem data={data} />;

@@ -1,6 +1,6 @@
 import React from 'react';
 import foodIcon from '../asset/foodcovered.svg';
-const Nav = () => {
+const Nav = ({slideToggler}) => {
   return (
     <nav className={'w-full block fixed  top-0 left-0 shadow-lg backdrop-blur-sm bg-white/5 z-50 '}>
       {/**container for mobile  */}
@@ -9,7 +9,7 @@ const Nav = () => {
           <img src={foodIcon} className={'h-8 w-8 mr-2'} />
           <h2>Foodie</h2>
         </div>
-        <div className="block  md:hidden">
+        <div className="block  md:hidden" onClick={()=>slideToggler(true)}>
           <i className="material-icons">dehaze</i>
         </div>
         {/**options container for large screen */}
