@@ -1,11 +1,15 @@
 import React from 'react';
 const Sidebar = ({canOpen}) => {
-  
+  const ztoggle=`${canOpen?"animate-zin":"animate-zout"}`
+
+  const opacitytoggle=`${canOpen?"animate-oin":"animate-out"}`
+
+  const slidetoggle = `${canOpen?"animate-slideIn":"animate-slideOut"}`
   const data = [{ title: 'Dashboard', path: '#', icon: 'dashboard' }, {title:"Notification ", path:"",icon:"notifications"}];
   return (
-    <aside className={`fixed top-[80px] left-0 w-screen h-screen z-[51] transition `}>
-    <div  className={`w-full h-full bg-black/5 backdrop-blur-sm transition ease-in-out  duration-[2000ms] delay-100 ${canOpen?"opacity-100 ":"opacity-0 "}`}>
-      <div className="bg-white w-1/2 h-full overflow-hidden">
+    <aside className={`fixed top-[0px] left-0 w-screen h-screen z-[51] transition ${ztoggle} `}>
+    <div  className={`w-full h-full bg-black/5 backdrop-blur-sm transition ${opacitytoggle}`}>
+      <div className={`bg-white w-1/2 h-full overflow-hidden ${slidetoggle}`}>
         {data.map((data, i) => {
           return <SideItem data={data} />;
         })}
