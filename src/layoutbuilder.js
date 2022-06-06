@@ -8,7 +8,7 @@ const LayoutFrame = ({ children }) => {
       <Nav slideToggler={setShowSlide}/>
       <div className="pt-[86px]">
         <div>
-          <Sidebar canOpen={showSlide} />
+          <Sidebar canOpen={showSlide} sliderToggle={setShowSlide} />
         </div>
         <div>{children}</div>
       </div>

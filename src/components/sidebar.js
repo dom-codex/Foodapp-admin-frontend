@@ -1,5 +1,5 @@
 import React from 'react';
-const Sidebar = ({canOpen}) => {
+const Sidebar = ({canOpen, sliderToggle}) => {
   const ztoggle=`${canOpen?"animate-zin":"animate-zout"}`
 
   const opacitytoggle=`${canOpen?"animate-oin":"animate-out"}`
@@ -7,8 +7,8 @@ const Sidebar = ({canOpen}) => {
   const slidetoggle = `${canOpen?"animate-slideIn":"animate-slideOut"}`
   const data = [{ title: 'Dashboard', path: '#', icon: 'dashboard' }, {title:"Notification ", path:"",icon:"notifications"}];
   return (
-    <aside className={`fixed top-[0px] left-0 w-screen h-screen z-[51] transition ${ztoggle} `}>
-    <div  className={`w-full h-full bg-black/5 backdrop-blur-sm transition ${opacitytoggle}`}>
+    <aside className={`fixed top-[0px] left-0 w-screen h-screen   ${ztoggle} `}>
+    <div  className={`w-full h-full bg-black/5 backdrop-blur-sm ${opacitytoggle}`} onClick={()=>sliderToggle(false)}>
       <div className={`bg-white w-1/2 h-full overflow-hidden ${slidetoggle}`}>
         {data.map((data, i) => {
           return <SideItem data={data} />;
