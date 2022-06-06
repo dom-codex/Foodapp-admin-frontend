@@ -4,7 +4,11 @@ import Notification from '../components/notification.js';
 import Activity from '../components/activity.js';
 import MealCard from '../components/mealcard.js';
 const Dashboard = () => {
-  const stats = [{label:"customers",value:"3000",icon:"people"},{label:"Today's Orders",value:"05",icon:"list"},{label:"Processed Orders",value:"02",icon:"list"}]
+  const stats = [
+    { label: 'customers', value: '3000', icon: 'people' },
+    { label: "Today's Orders", value: '05', icon: 'list' },
+    { label: 'Processed Orders', value: '02', icon: 'list' },
+  ];
   return (
     <section>
       <div className="w-[95%] mx-auto">
@@ -25,9 +29,10 @@ const Dashboard = () => {
           >
             Statistics{' '}
           </h2>
-          <div className="overflow-x-scroll">
-            {stats.map(()=><Statscard/>)}
-          
+          <div className="overflow-scroll  whitespace-nowrap ">
+            {stats.map(() => (
+              <Statscard />
+            ))}
           </div>
         </div>
         <div className="mb-10">
