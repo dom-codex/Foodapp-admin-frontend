@@ -51,7 +51,7 @@ const Dashboard = () => {
           >
             Notification {'&'} Alert
           </h2>
-          <div className="block">
+          <div className="block md:flex md:justify-between ">
             <Notification />
             <Activity />
           </div>

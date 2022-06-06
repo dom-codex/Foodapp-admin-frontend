@@ -1,7 +1,7 @@
 import React from 'react';
 const Notification = () => {
   return (
-    <div className="rounded-md bg-white/40 backdrop-blur-sm shadow-lg border-[1px] border-slate-200">
+    <div className="bg-white/40 backdrop-blur-sm shadow-lg border-[1px] border-slate-200 md:w-1/2 md:mr-2">
       <div className="flex justify-between items-center  px-2 h-[48px]">
         <p
           className="font-bold relative  
