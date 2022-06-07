@@ -10,6 +10,7 @@ const Dashboard = () => {
     { label: 'Processed Orders', value: '02', icon: 'list' },
   ];
   const meals = [{},{},{}]
+  const morestat=[{},{},{}]
   return (
     <section>
       <div className="w-[95%] mx-auto">
@@ -54,7 +55,9 @@ const Dashboard = () => {
           >
             More Stats{' '}
           </h2>
-          <Statscard />
+          <div className="overflow-auto whitespace-nowrap">
+            {morestat.map(()=><Statscard/>)}
+          </div>
         </div>
         <div className="mb-10">
           <h2
