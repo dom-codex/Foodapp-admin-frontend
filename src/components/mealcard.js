@@ -8,6 +8,7 @@ const MealCard = () => {
         <button className="absolute bottom-[6px] right-[8px] bg-black/40 shadow-sm rounded-sm p-[8px]">
           <i className="material-icons text-slate-200">edit</i>
         </button>
+        <p className="absolute top-0 left-0 p-2 bg-black/30 text-white">Foods</p>
       </div>
       <div className="m-4">
         <h2 className="font-bold ">Jollof rice </h2>
