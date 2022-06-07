@@ -9,6 +9,7 @@ const Dashboard = () => {
     { label: "Today's Orders", value: '05', icon: 'list' },
     { label: 'Processed Orders', value: '02', icon: 'list' },
   ];
+  const meals = [{},{},{}]
   return (
     <section>
       <div className="w-[95%] mx-auto">
@@ -37,12 +38,14 @@ const Dashboard = () => {
         </div>
         <div className="mb-10">
           <h2
-            className="relative  font-bold mb-8 text-[1.6rem] text-slate-700 before:content-[''] 
+            className="relative  font-bold  text-[1.3rem] text-slate-700 before:content-[''] 
           before:absolute before:w-[12%] before:h-[2px] before:bg-black before:-bottom-1 before:rounded-md "
           >
             Popular Meals
           </h2>
-          <MealCard />
+          <div className="overflow-auto whitespace-nowrap py-4">
+            {meals.map(()=><MealCard/>)}
+          </div>
         </div>
         <div className="mb-10">
           <h2

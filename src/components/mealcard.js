@@ -2,7 +2,7 @@ import React from 'react';
 import { getFoodImageUrl } from '../asset/getimages.js';
 const MealCard = () => {
   return (
-    <div className="rounded-md shadow-lg bg-white/10 backdrop-blur-sm border-[1px] border-slate-100 w-[95%] max-w-[320px] mt-4 overflow-hidden">
+    <div className="rounded-md shadow-lg bg-white/10 backdrop-blur-sm border-[1px] border-slate-100 w-[320px] mt-4 overflow-hidden inline-block mr-4">
       <div className="relative overflow-hidden max-h-[180px]">
         <img src={getFoodImageUrl()} className="w-fit h-fit" />
         <button className="absolute bottom-[6px] right-[8px] bg-black/40 shadow-sm rounded-sm p-[8px]">
