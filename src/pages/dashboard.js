@@ -15,7 +15,7 @@ const Dashboard = () => {
       <div className="w-[95%] mx-auto">
         <div className={'flex mx-auto mb-8'}>
           <div>
-            <h2 className="font-bold mb-0 text-[1.5rem]">Welcome Dominic!!!</h2>
+            <h2 className="font-bold mb-0 text-[1.5rem] text-slate-600">Welcome Dominic!!!</h2>
             <small className="text-slate-500 mt-0 text-[0.9rem] font-bold ">
               <span>access level:</span>
               <span>Owner</span>
@@ -25,7 +25,7 @@ const Dashboard = () => {
         {/**stats section  */}
         <div className="mb-10">
           <h2
-            className="relative  font-bold mb-8 text-[1.6rem] text-slate-700 before:content-[''] 
+            className="relative  font-bold mb-8 text-[1.3rem] text-slate-700 before:content-[''] 
           before:absolute before:w-[10%] before:h-[2px] before:bg-black before:bottom-0 before:rounded-md "
           >
             Statistics{' '}

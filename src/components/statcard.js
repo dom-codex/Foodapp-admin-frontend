@@ -1,8 +1,8 @@
 import React from 'react';
 const Statscard = () => {
   return (
-    <div className="border-2 border-purple-700 overflow-hidden rounded-md shadow-lg inline-block w-[320px] mr-2 ">
-      <div className="flex  justify-between items-center h-[100px] bg-purple-500/60 backdrop-blur-sm px-4">
+    <div className="border-2 border-slate-700 overflow-hidden rounded-md shadow-lg inline-block w-[320px] mr-2 ">
+      <div className="flex  justify-between items-center h-[100px] bg-slate-300/60 backdrop-blur-sm px-4">
         <div>
           <p className="text-2xl font-bold">200</p>
           <small>Customers</small>
@@ -12,11 +12,11 @@ const Statscard = () => {
         </div>
       </div>
       <div className="bg-white/1 backdrop-blur-sm h-[62px] flex justify-between items-center px-4">
-        <a href="#" className="text-purple-700">
+        <a href="#" className="text-slate-700">
           see more
         </a>
         <span>
-          <i className="material-icons text-purple-900">arrow_right</i>
+          <i className="material-icons text-slate-900">arrow_right</i>
         </span>
       </div>
     </div>
