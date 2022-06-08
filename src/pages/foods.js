@@ -8,10 +8,16 @@ const Foods =()=>{
 return <section className="pb-4">
   <div className="w-[95%] mx-auto">
     <div className="mb-4">
-      <div>
+      <div className="flex justify-between">
       <h2 className="text-[1.65rem] font-bold">Menu</h2>
       {/**floating menu */}
-      <div className="relative ">
+      <div  className="relative group ">
+      <button className="border-2 border-slate-500 text-slate-600 rounded-md bg-white flex items-center justify-center p-2 w-[90px]  ">
+        <i className="material-icons ">
+          add
+        </i>
+        <span>Add</span>
+      </button>
         <FloatingMenu>
           <li>category</li>
           <li>Food</li>
