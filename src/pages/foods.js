@@ -1,6 +1,7 @@
 import React from "react"
 import Category from "../components/category.js"
 import MealCard from "../components/mealcard.js"
+import FloatingMenu from "../components/floatingmenu.js"
 const Foods =()=>{
   const foods = [{},{},{}]
   const categories = [{},{},{},{},{}]
@@ -10,6 +11,12 @@ return <section className="pb-4">
       <div>
       <h2 className="text-[1.65rem] font-bold">Menu</h2>
       {/**floating menu */}
+      <div className="relative ">
+        <FloatingMenu>
+          <li>category</li>
+          <li>Food</li>
+          </FloatingMenu>
+      </div>
       </div>
       <div className="text-slate-600">
         <span>Total: </span>
