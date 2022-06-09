@@ -12,15 +12,16 @@ return <section className="pb-4">
       <h2 className="text-[1.65rem] font-bold">Menu</h2>
       {/**floating menu */}
       <div  className="relative group ">
-      <button className="border-2 border-slate-500 text-slate-600 rounded-md bg-white flex items-center justify-center p-2 w-[90px]  ">
+      <button className="border-2 border-slate-500 text-slate-600 rounded-md bg-white flex items-center justify-center  w-[90px] p-2 ">
         <i className="material-icons ">
           add
         </i>
         <span>Add</span>
       </button>
         <FloatingMenu>
-          <li>category</li>
-          <li>Food</li>
+          <li className="p-2 hover:bg-slate-100">category</li>
+          <li className="h-[1px] bg-slate-200 "></li>
+          <li className="p-2 hover:bg-slate-100">Food</li>
           </FloatingMenu>
       </div>
       </div>
