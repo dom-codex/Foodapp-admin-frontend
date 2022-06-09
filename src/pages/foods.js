@@ -41,7 +41,9 @@ const Foods = () => {
             ))}
           </div>
           <div
-            className={'grid place-items-center sm:flex-1 sm:overflow-y-scroll'}
+            className={
+              'grid place-items-center sm:flex-1 sm:block sm:ml-6 lg:grid lg:auto-cols-auto'
+            }
           >
             {foods.map(() => (
               <MealCard />
