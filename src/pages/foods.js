@@ -2,6 +2,7 @@ import React from 'react';
 import Category from '../components/category.js';
 import MealCard from '../components/mealcard.js';
 import FloatingMenu from '../components/floatingmenu.js';
+import SearchBar from '../components/searchbar.js';
 const Foods = () => {
   const foods = [{}, {}, {}];
   const categories = [{}, {}, {}, {}, {}];
@@ -30,6 +31,9 @@ const Foods = () => {
             <span>Total: </span>
             <span>52 items</span>
           </div>
+        </div>
+        <div>
+          <SearchBar />
         </div>
         <div className="sm:flex sm:overflow-y-scroll ">
           <div
