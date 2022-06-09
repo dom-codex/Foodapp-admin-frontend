@@ -9,6 +9,11 @@ const MealCard = () => {
           <i className="material-icons text-slate-200">edit</i>
         </button>
         <p className="absolute top-0 left-0 p-2 bg-black/30 text-white">Foods</p>
+        <button className="absolute top-[8px] right-[8px]">
+          <i className="material-icons">
+            clear
+          </i>
+        </button>
       </div>
       <div className="m-4">
         <h2 className="font-bold ">Jollof rice </h2>
