@@ -12,11 +12,13 @@ const Foods = () => {
           <div className="flex justify-between">
             <h2 className="text-[1.65rem] font-bold">Menu</h2>
             {/**floating menu */}
-            <div className="relative group ">
-              <button className="border-2 border-slate-500 text-slate-600 rounded-md bg-white flex items-center justify-center  w-[90px] p-2 ">
-                <i className="material-icons ">add</i>
-                <span>Add</span>
-              </button>
+            <div className="relative g sm:flex ">
+              <AddButton
+                title={'Category'}
+                classes={'hidden sm:flex mr-2 w-[110px]'}
+              />
+              <AddButton title={'Meal'} classes={'hidden sm:flex'} />
+              <AddButton title={'Add'} classes={'sm:hidden peer'} />
               <FloatingMenu>
                 <li className="p-2 hover:bg-slate-100">category</li>
                 <li className="h-[1px] bg-slate-200 "></li>
@@ -51,3 +53,14 @@ const Foods = () => {
   );
 };
 export default Foods;
+
+const AddButton = ({ title, classes }) => {
+  return (
+    <button
+      className={`border-2 border-slate-500 text-slate-600 rounded-md bg-white flex items-center justify-center  w-[90px] p-2 ${classes}  `}
+    >
+      <i className="material-icons ">add</i>
+      <span>{title}</span>
+    </button>
+  );
+};
