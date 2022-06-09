@@ -1,7 +1,7 @@
 import React from 'react';
 const SearchBar = () => {
   return (
-    <div className="relative h-[42px] overflow-hidden rounded-[42px] mb-3 inline-flex">
+    <div className="relative h-[42px] overflow-hidden rounded-[42px] mb-3">
       <input
         type={'text'}
         placeholder="meal e.g rice"

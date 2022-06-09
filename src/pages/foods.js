@@ -32,9 +32,6 @@ const Foods = () => {
             <span>52 items</span>
           </div>
         </div>
-        <div>
-          <SearchBar />
-        </div>
         <div className="sm:flex sm:overflow-y-scroll ">
           <div
             className="overflow-auto whitespace-nowrap mb-6 sm:w-[280px] sm:whitespace-normal sm:overflo
@@ -49,6 +46,9 @@ const Foods = () => {
               'grid place-items-center sm:flex-1 sm:block sm:ml-6 lg:grid lg:auto-cols-auto'
             }
           >
+            <div className="">
+              <SearchBar />
+            </div>
             {foods.map(() => (
               <MealCard />
             ))}
