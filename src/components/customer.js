@@ -5,11 +5,18 @@ const Customer = ({ name, email, phone }) => {
       <div className="h-[120px] grid place-items-center bg-slate-300">
         <i className="material-icons icon text-slate-500">person</i>
       </div>
-      <div className="px-3 py-6 bg-white/10 backdrop-blur-sm">
+      <div className="px-3 py-4 bg-white/10 backdrop-blur-sm">
         <Details title={'name'} value={name} />
         <Details title={'email'} value={email} />
         <Details title={'phone'} value={phone} />
         <Details title="Status" value="VERIFIED" />
+      </div>
+      <div className="flex">
+        <button className="flex p-3 border-2 border-slate-400 flex-1">
+          <span>Send Email</span>
+          <i className="material-icons">mail</i>
+        </button>
+        <button className="flex-1"> suspend</button>
       </div>
     </div>
   );
