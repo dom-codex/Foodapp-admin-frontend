@@ -12,11 +12,11 @@ const Customer = ({ name, email, phone }) => {
         <Details title="Status" value="VERIFIED" />
       </div>
       <div className="flex">
-        <button className="flex p-3 border-2 border-slate-400 flex-1">
+        <button className="flex p-2 border-2 border-slate-400 flex-1 items-center ">
           <span>Send Email</span>
-          <i className="material-icons">mail</i>
+          <i className="material-icons text-slate-400">mail</i>
         </button>
-        <button className="flex-1"> suspend</button>
+        <button className="flex-1 bg-slate-300"> suspend</button>
       </div>
     </div>
   );
