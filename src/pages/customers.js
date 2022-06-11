@@ -7,10 +7,12 @@ const Customers = () => {
       <div className="w-[95%] mx-auto">
         <div>
           <div>
-            <h2>Customers</h2>
-            <div>
-              <span>Total</span>
-              <small>300</small>
+            <h2 className="text-[1.35rem] text-slate-600 font-bold">
+              Customers
+            </h2>
+            <div className="text-[1.05rem]">
+              <span>Total: </span> 
+              <small className="font-bold">300</small>
             </div>
           </div>
           <div>
@@ -18,7 +20,11 @@ const Customers = () => {
           </div>
         </div>
         <div>
-          <Customer name="dominic" email="dom@gmail.com" phone="08101063084" />
+          <Customer
+            name="dominic"
+            email="domrkhgshhvfjhdfgjhdfjdghdfjhfdjgfdjghffhfjhfgjffhjh@gmail.com"
+            phone="08101063084"
+          />
         </div>
       </div>
     </section>
