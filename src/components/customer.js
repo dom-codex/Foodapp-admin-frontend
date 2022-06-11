@@ -1,7 +1,7 @@
 import React from 'react';
 const Customer = ({ name, email, phone }) => {
   return (
-    <div className="backdrop-blur-sm rounded-md  min-w-[220px] max-w-[420px] shadow-md overflow-hidden ">
+    <div className="backdrop-blur-sm rounded-md w-fit  min-w-[220px] max-w-[420px] shadow-md overflow-hidden ">
       <div className="h-[120px] grid place-items-center bg-slate-300">
         <i className="material-icons icon text-slate-500">person</i>
       </div>

@@ -11,20 +11,16 @@ const Customers = () => {
               Customers
             </h2>
             <div className="text-[1.05rem]">
-              <span>Total: </span> 
+              <span>Total: </span>
               <small className="font-bold">300</small>
             </div>
           </div>
           <div>
-            <SearchBar />
+            <SearchBar label="customer email" />
           </div>
         </div>
         <div>
-          <Customer
-            name="dominic"
-            email="domrkhgshhvfjhdfgjhdfjdghdfjhfdjgfdjghffhfjhfgjffhjh@gmail.com"
-            phone="08101063084"
-          />
+          <Customer name="dominic" email="doh@gmail.com" phone="08101063084" />
         </div>
       </div>
     </section>

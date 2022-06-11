@@ -47,7 +47,7 @@ const Foods = () => {
             }
           >
             <div className="">
-              <SearchBar />
+              <SearchBar label="meal e.g rice" />
             </div>
             {foods.map(() => (
               <MealCard />
