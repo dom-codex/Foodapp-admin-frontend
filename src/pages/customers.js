@@ -4,7 +4,7 @@ import Customer from '../components/customer.js';
 const Customers = () => {
   return (
     <section>
-      <div>
+      <div className="w-[95%] mx-auto">
         <div>
           <div>
             <h2>Customers</h2>

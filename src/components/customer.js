@@ -11,8 +11,8 @@ const Customer = ({ name, email, phone }) => {
         <Details title={'phone'} value={phone} />
         <Details title="Status" value="VERIFIED" />
       </div>
-      <div className="flex">
-        <button className="flex p-2 border-2 border-slate-400 flex-1 items-center ">
+      <div className="flex border-[1px] border-slate-400 rounded-bl-md rounded-br-md">
+        <button className="flex p-2 flex-1 items-center  ">
           <span>Send Email</span>
           <i className="material-icons text-slate-400">mail</i>
         </button>
