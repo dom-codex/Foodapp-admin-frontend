@@ -2,7 +2,8 @@ import React from 'react';
 
 const Rider = () => {
   return (
-    <div className="p-6 bg-white/5 backdrop-blur-sm shadow-md w-[80%] mx-auto">
+    <div className="p-6 bg-white/5 backdrop-blur-sm shadow-md w-[80%] mx-auto   rounded-sm my-2 max-w-[420px] relative ">
+      <button className="absolute -top-[8px] -right-[8px] w-[30px] h-[30px] rounded-[15px] shadow-md z-50 bg-red-100">X</button>
       <div className="flex justify-between">
         <img
           className="h-[50px] w-[50px] rounded-[12px] border-2 border-slate-500"
