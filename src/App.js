@@ -4,6 +4,7 @@ import Dashboard from './pages/dashboard.js';
 import Foods from './pages/foods.js';
 import Customers from './pages/customers.js';
 import Riders from './pages/riders.js';
+import Alerts from './pages/alert.js';
 import Login from './pages/login.js';
 import Nav from './components/nav.js';
 import Sidebar from './components/sidebar.js';
@@ -13,7 +14,7 @@ export default function App() {
   return (
     <div className="">
       <LayoutFrame>
-        <Riders />
+        <Alerts />
       </LayoutFrame>
     </div>
   );
