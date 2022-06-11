@@ -1,5 +1,7 @@
 import React, { useState } from 'react';
 import PageLabel from '../components/pagelabel.js';
+import NavContainer from "../components/navcontainer.js"
+import ActivityContainer from "../components/activitycontainer.js"
 const Alerts = () => {
   const [tabToggle, toggler] = useState(true);
   return (
@@ -8,6 +10,7 @@ const Alerts = () => {
         <PageLabel label="Alerts" value="200" />
         <div>
           <Tab isNotification={tabToggle} toggler={toggler} />
+          {tabToggle?<NavContainer/>:<ActivityContainer/>}
         </div>
       </div>
     </section>
