@@ -3,6 +3,12 @@ import React from 'react';
 const NavContainer = () => {
   const notification =[{},{},{}]
   return <div className="translate-x-[-100%] animate-slideIn pt-4">
+    <div className="mb-3 text-right">
+      <button className="inline-flex items-center mr-2 text-red-400 ">
+        clear <i className="material-icons">
+          clear </i>
+      </button>
+    </div>
     {notification.map(()=><Item/>)}
   </div>;
 };
