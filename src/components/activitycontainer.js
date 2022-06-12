@@ -1,6 +1,34 @@
 import React from 'react';
 
 const ActivityContainer = () => {
-  return <div className="translate-x-[100%] animate-slideIn"></div>;
+  const activity =[{},{},{}]
+  return  <div className="translate-x-[-100%] animate-slideIn pt-4">
+  <div className="mb-3 text-right">
+    <button className="inline-flex items-center mr-2 text-red-400 ">
+      clear <i className="material-icons">
+        clear </i>
+    </button>
+  </div>
+  {activity.map(()=><Item/>)}
+</div>;
+
 };
 export default ActivityContainer;
+const Item =()=>{
+  return <div className="flex bg-white  items-center w-[95%] mx-auto shadow-md mb-3 p-4 rounded-md">
+    <div className="mr-2" >
+      <i className="material-icons">group </i>
+    </div>
+    <div>
+      <p className="text-[1.3rem] font-bold ">New Complaint Email</p>
+      <p className="text-slate-600 font-bold">
+        <span>actionBy: </span>
+        <span>dom@gmail.com </span>
+      </p>
+      <p className="text-slate-400 font-bold ">
+      <span>sent</span>
+      <span>Mon 13 jan,2022 3:54pm</span>
+      </p>
+    </div>
+  </div>
+}
