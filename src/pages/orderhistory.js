@@ -3,7 +3,7 @@ import PageLabel from '../components/pagelabel.js';
 import SearchBar from '../components/searchbar.js';
 const OrderHistory = () => {
   return (
-    <section className="overflow-hidden">
+    <section className="overflow-hidden pb-6">
       <div className="pt-6 w-[95%] mx-auto">
         <div className="sm:flex sm:justify-between">
           <PageLabel
