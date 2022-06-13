@@ -4,7 +4,7 @@ import { getFoodImageUrl } from '../asset/getimages.js';
 const Orders = () => {
   const orders = [{}, {}, {}];
   return (
-    <section>
+    <section className="min-w-[380px]">
       <div className="w-[95%] mx-auto">
         <div>
           <PageLabel label="Live Orders" value="10" />
