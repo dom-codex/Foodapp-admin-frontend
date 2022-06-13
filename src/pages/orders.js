@@ -6,9 +6,9 @@ const Orders = () => {
     <section>
       <div>
         <div>
-          <PageLabel label="Live Orders" total="10" />
+          <PageLabel label="Live Orders" value="10" />
         </div>
-        <div>
+        <div className="mt-6">
           {orders.map(() => (
             <OrderItem />
           ))}
@@ -21,12 +21,12 @@ export default Orders;
 const OrderItem = () => {
   return (
     <div>
-      <div className="flex justify-between">
+      <div className="flex justify-between items-center">
         <div>
-          <p>Purchased Items</p>
-          <p>$200.78</p>
-          <div>
-            <p>Status</p>
+          <p className="font-bold">Purchased Items</p>
+          <p className="text-slate-500 font-bold">$200.78</p>
+          <div className="flex">
+            <p>Status: </p> 
             <p>Placed</p>
           </div>
         </div>
