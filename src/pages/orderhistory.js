@@ -1,13 +1,32 @@
 import React from 'react';
 import PageLabel from '../components/pagelabel.js';
+import SearchBar from '../components/searchbar.js';
 const OrderHistory = () => {
   return (
     <section className="overflow-hidden">
       <div className="pt-6 w-[95%] mx-auto">
-        <PageLabel label="OrderHistory" value={24} />
+        <div className="sm:flex sm:justify-between">
+          <PageLabel
+            label="Order History"
+            value={24}
+            extras="font-bold text-[1.8rem] sm:text-[2rem]"
+          />
+          <div className="mt-4">
+            <SearchBar label="Order Id e.g 0001" />
+          </div>
+        </div>
         <div className="overflow-x-scroll whitespace-nowrap mt-6 border-2 border-slate-300 p-4 rounded-md">
           <OrderHeader />
           <OrderBody />
+        </div>
+        <div className="mt-6 flex justify-center">
+          <button className="mr-2">
+            <i className="material-icons"> arrow_left</i>
+          </button>
+          <p className="bg-slate-200 p-3 rounded-sm">02</p>
+          <button className="ml-2">
+            <i className="material-icons">arrow_right</i>
+          </button>
         </div>
       </div>
     </section>
