@@ -2,10 +2,10 @@ import React from 'react';
 import PageLabel from '../components/pagelabel.js';
 const OrderHistory = () => {
   return (
-    <section>
+    <section className="overflow-hidden">
       <div>
         <PageLabel label="OrderHistory" value={24} />
-        <div>
+        <div className="overflow-x-scroll whitespace-nowrap">
           <OrderHeader />
           <OrderBody />
         </div>
@@ -14,27 +14,26 @@ const OrderHistory = () => {
   );
 };
 export default OrderHistory;
+const OrderItemField = ({ value }) => {
+  return (
+    <div className="w-[140px] break-words whitespace-normal">
+      <p className="underline break-words hover:font-bold">{value}</p>
+    </div>
+  );
+};
 const OrderItem = () => {
   return (
-    <div className="grid grid-cols-[repeat(6,1fr)]">
-      <div>
-        <p>000001</p>
-      </div>
-      <div>
-        <p>13/06/2022</p>
-      </div>
-      <div>
-        <p>dom@gmail.com</p>
-      </div>
-      <div>
-        <p>$200.56</p>
-      </div>
-      <div>
-        <p>Processing</p>
-      </div>
-      <div className="flex items-center">
-        <button>View order</button>
-        <button className="ml-6">
+    <div className="grid grid-cols-[repeat(6,1fr)] gap-4">
+      <OrderItemField value={'00001'} />
+      <OrderItemField value={'13 / 06 / 2022'} />
+      <OrderItemField value="dom@gmail.com" />
+      <OrderItemField value="$200.56" />
+      <OrderItemField value="Processing" />
+      <div className="flex items-center w-[100px]">
+        <button className="text-sky-700 hover:font-bold hover:underline">
+          View order
+        </button>
+        <button className="ml-6 text-red-500 hover:text-[1.1rem]">
           <i className="material-icons">clear</i>
         </button>
       </div>
@@ -53,25 +52,13 @@ const OrderBody = () => {
 };
 const OrderHeader = () => {
   return (
-    <div className="grid grid-cols-[repeat(6,1fr)] ">
-      <div>
-        <p>Order #</p>
-      </div>
-      <div>
-        <p>Date</p>
-      </div>
-      <div>
-        <p>Customer</p>
-      </div>
-      <div>
-        <p>Total</p>
-      </div>
-      <div>
-        <p>Status</p>
-      </div>
-      <div>
-        <p>Actions</p>
-      </div>
+    <div className="grid grid-cols-[repeat(6,1fr)] gap-4">
+      <OrderItemField value="Order #" />
+      <OrderItemField value="Date" />
+      <OrderItemField value="Customer" />
+      <OrderItemField value="Total" />
+      <OrderItemField value="Status" />
+      <OrderItemField value="Actions" />
     </div>
   );
 };
