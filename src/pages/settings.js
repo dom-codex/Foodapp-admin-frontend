@@ -10,29 +10,14 @@ const Settings = () => {
               Account Details
             </h2>
           </div>
-          <button>
-            <i className="material-icons">log_out</i>
+          <button className="flex items-center text-gray-700 font-bold hover:text-red-500">
+            <i className="material-icons">power</i>
+            Logout
           </button>
         </div>
-        <div className="mt-6 bg-gray-50 py-6 pl-3">
+        <div className="mt-4 bg-gray-50 py-6 pl-3">
           <p className="text-gray-400 text-[0.9rem] font-bold">PERSONAL</p>
-          <div className="mt-2">
-            <div>
-              {' '}
-              <span className="text-slate-700 font-bold">Name:</span>{' '}
-              <span className="text-gray-500 font-bold">Dominic west</span>{' '}
-            </div>
-            <div>
-              {' '}
-              <span className="text-slate-700 font-bold">Email:</span>{' '}
-              <span className="text-gray-500 font-bold">domwest@gmail.com</span>
-            </div>
-            <div>
-              {' '}
-              <span className="text-slate-700 font-bold">role:</span>{' '}
-              <span className="text-gray-500 font-bold">OWNER</span>{' '}
-            </div>
-          </div>
+          <AdminDetails/>
         </div>
         <div className="my-3">
           <button className="bg-white text-red-700 font-bold border-[1px] border-red-700 rounded-md px-3 py-1 shadow-md text-[0.87rem] hover:bg-red-700 hover:text-white hover:text-[0.8rem] ">
@@ -54,6 +39,26 @@ const Settings = () => {
   );
 };
 export default Settings;
+
+const AdminDetails = ()=>{
+  return <div className="mt-2">
+  <div>
+    {' '}
+    <span className="text-slate-700 font-bold">Name:</span>{' '}
+    <span className="text-gray-500 font-bold">Dominic west</span>{' '}
+  </div>
+  <div>
+    {' '}
+    <span className="text-slate-700 font-bold">Email:</span>{' '}
+    <span className="text-gray-500 font-bold">domwest@gmail.com</span>
+  </div>
+  <div>
+    {' '}
+    <span className="text-slate-700 font-bold">role:</span>{' '}
+    <span className="text-gray-500 font-bold">OWNER</span>{' '}
+  </div>
+</div>
+}
 const SubAdmin = () => {
   return (
     <div className="flex mb-4 bg-white shadow-lg p-3 rounded-md relative">
