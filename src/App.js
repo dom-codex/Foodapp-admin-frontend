@@ -7,6 +7,7 @@ import Riders from './pages/riders.js';
 import Alerts from './pages/alerts.js';
 import OrderHistory from './pages/orderhistory.js';
 import Orders from './pages/orders.js';
+import Settings from './pages/settings.js';
 import Login from './pages/login.js';
 import Nav from './components/nav.js';
 import Sidebar from './components/sidebar.js';
@@ -16,7 +17,7 @@ export default function App() {
   return (
     <div className="">
       <LayoutFrame>
-        <Orders />
+        <Settings />
       </LayoutFrame>
     </div>
   );
